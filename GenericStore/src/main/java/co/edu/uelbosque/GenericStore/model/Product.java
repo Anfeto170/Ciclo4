@@ -3,9 +3,9 @@ package co.edu.uelbosque.GenericStore.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "users")
+@Document(collection = "products")
 
-public class User {
+public class Product {
 
 	@Id
 	private String id;
@@ -14,16 +14,16 @@ public class User {
 	private String name;
 	private float purchasePrice, salePrice;
 
-	public User() {
+	public Product() {
 
 	}
 
-	public User(int code, int nitSupplier, String name, float purchasePrice, float salePrice) {
+	public Product(int code, int nitSupplier, String name, float purchasePrice) {
 		this.code = code;
 		this.nitSupplier = nitSupplier;
 		this.name = name;
 		this.purchasePrice = purchasePrice;
-		this.salePrice = salePrice;
+		this.salePrice = (float) ((purchasePrice * 0.19) + purchasePrice);
 	}
 
 	@Override
