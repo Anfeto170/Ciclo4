@@ -1,13 +1,13 @@
-package edu.uelbosque.Store.GenericStore;
+package co.edu.lagenerica;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GenericStoreApplication {
+public class LagenericaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GenericStoreApplication.class, args);
+		SpringApplication.run(LagenericaApplication.class, args);
 	}
 
 }

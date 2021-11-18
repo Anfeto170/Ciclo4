@@ -1,10 +1,10 @@
-package edu.uelbosque.Store.GenericStore;
+package co.edu.lagenerica;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GenericStoreApplicationTests {
+class LagenericaApplicationTests {
 
 	@Test
 	void contextLoads() {
